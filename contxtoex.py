@@ -20,7 +20,7 @@ def extract_sales_data(file_content):
             break
     
     sales_data = {
-        "CARD": 0, "CASH": 0, "COD": 0, "CREDIT": 0, "MOBI KWIK": 0,"PAYBYLINK": 0,
+        "CARD": 0, "CASH": 0, "COD": 0, "CREDIT": 0, "MOBI KWIK": 0,"PAYBYLINK": 0,"GIFT VOUCHER": 0,
         "PAYTM CARD": 0, "PAYTM DQRC": 0, "QR CODE": 0, "RELIGARE": 0, "UPI": 0, "POS SALES": 0
     }
     
@@ -85,4 +85,5 @@ if uploaded_files:
             st.download_button("Download Excel File", f, file_name="Sales_Report.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
     else:
         st.error("Failed to process the files.")
+
 
