@@ -85,3 +85,4 @@ if uploaded_files:
             st.download_button("Download Excel File", f, file_name="Sales_Report.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
     else:
         st.error("Failed to process the files.")
+
